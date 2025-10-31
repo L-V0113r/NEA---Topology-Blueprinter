@@ -246,7 +246,7 @@ def Edit_Hardware(Hardware_Name):  # Ensure Hardware_Name is defined
                     dpg.add_text("Servers can only connect to Switches or Firewalls .",wrap=280)
                     stop = True
                     dpg.add_button(label="Close", callback=lambda: [dpg.delete_item("Error Popup"),dpg.delete_item("Add_Connection_Window")])
-            elif hardware_Type == "Switch" and selected_hardware_Type not in ["Router", "Access Point", "Server", "Firewall", "unspecified device"]:
+            elif hardware_Type == "Switch" and selected_hardware_Type not in ["Router", "Access Point", "Server", "Firewall", "Unspecified device"]:
                 with dpg.window(label="Error", width=300, height=200, pos=(250, 200), no_resize=True, no_title_bar=True, no_move=True, tag="Error Popup"):
                     dpg.add_text("Switches can only connect to Routers or Access Points or Servers or Firewalls or Unspecified devices.",wrap=280)
                     stop = True
@@ -372,5 +372,3 @@ def File_Details(variables):
         dpg.add_input_text(label="File Name", tag="file_name_input", default_value="New_Topology")
         dpg.add_button(label="Save", callback=lambda: Check_File(dpg.get_value("file_name_input"), variables))
         dpg.add_button(label="Cancel", callback=lambda: dpg.delete_item("save_file_window"))
-
-
