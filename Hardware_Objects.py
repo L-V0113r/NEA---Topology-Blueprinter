@@ -122,7 +122,7 @@ class Router(Hardware):
 class Firewall(Hardware):
     def __init__(self,Hardware_ID,Hardware_Name):#one connection to switch and one to isp(cable to outside)  need make only those connections possible for firewall
         Hardware_Info_Firewall = "A firewall is a network security system that monitors and controls incoming and outgoing network traffic based on security rules created by the network administrator."
-        Hardware_Type_Firewall = Hardware_Type("Firewall",Hardware_Info_Firewall, Hardware_Ports(100,100))
+        Hardware_Type_Firewall = Hardware_Type("Firewall",Hardware_Info_Firewall, Hardware_Ports(2,2))
         super().__init__(Hardware_ID,  Hardware_Type_Firewall,Hardware_Name)
     
 
