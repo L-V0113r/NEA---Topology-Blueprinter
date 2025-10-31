@@ -113,7 +113,7 @@ class Hardware_Ports():#this class is used to store the number of ports availabl
 class Router(Hardware):
     def __init__(self,Hardware_ID,Hardware_Name):
         Hardware_Info_Router = "A router is a networking device that forwards data packets between computer networks."
-        Hardware_Type_Router = Hardware_Type("Router",Hardware_Info_Router,Hardware_Ports(253,253))#this creates a Hardware_Type object using other objects so all the information is stored in one object
+        Hardware_Type_Router = Hardware_Type("Router",Hardware_Info_Router,Hardware_Ports(255,255))#this creates a Hardware_Type object using other objects so all the information is stored in one object
         super().__init__(Hardware_ID,  Hardware_Type_Router,Hardware_Name)
 
     
@@ -130,7 +130,7 @@ class Firewall(Hardware):
 class Switch(Hardware):
     def __init__(self,Hardware_ID,Hardware_Name):
         Hardware_Info_Switch = "A network switch is networking hardware that connects devices on a computer network by using packet switching to receive and forward data to the destination device."
-        Hardware_Type_Switch = Hardware_Type("Switch",Hardware_Info_Switch,Hardware_Ports(50,50))
+        Hardware_Type_Switch = Hardware_Type("Switch",Hardware_Info_Switch,Hardware_Ports(48,48))
         super().__init__(Hardware_ID,  Hardware_Type_Switch,Hardware_Name)
 
 
@@ -156,7 +156,7 @@ class Unspecified_device(Hardware):
 class Access_Point(Hardware):
     def __init__(self,Hardware_ID,Hardware_Name):
         Hardware_Info_Access_Point = "An access point is a device that allows wireless devices to connect to a wired network using Wi-Fi."
-        Hardware_Ports_Access_Point = Hardware_Ports(100,100)#change number of ports!!!
+        Hardware_Ports_Access_Point = Hardware_Ports(255,255)
         Hardware_Type_Access_Point = Hardware_Type("Access Point",Hardware_Info_Access_Point,Hardware_Ports_Access_Point)
         super().__init__(Hardware_ID,  Hardware_Type_Access_Point,Hardware_Name)
 
