@@ -3,6 +3,9 @@
 ##Overiew
 This project is a network topology designer that allows users to create a blueprint of their network without any of the physical equipment.This was developed for my A-level computer science coursework and was created over the course of about 6 months.
 
+##Project Status
+Currently finished ,however definitely will return to this idea to develop further
+
 ##Features
 -Storage of Topologies(in text files)
 -Loading of Topologies from storage
